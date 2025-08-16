@@ -1,0 +1,9 @@
+name: Deploy App
+on:
+  workflow_dispatch:
+
+jobs:
+  call-build:
+    uses: amos330/test_github_actions/.github/workflows/build.yml@main
+    with:
+      version: ${{ inputs.version}}

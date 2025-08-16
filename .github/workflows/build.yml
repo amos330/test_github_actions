@@ -1,0 +1,13 @@
+name: Build Reusable
+on:
+  workflow_call:       #被其他action or workflow呼叫
+    inputs:
+      version:         #外部傳入參數
+        required: true #
+        type: string #int boolean string
+        default:"3.10"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Building version ${{ inputs.version }}"
