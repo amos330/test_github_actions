@@ -40,4 +40,5 @@ jobs:
           fi
           git add -A                   ###
           git commit -m "更新鉅亨網新聞"  ###
-          git push   #same repo..
+          git push   #same repo..###不同時 申請token
+		  
